@@ -1,5 +1,10 @@
 #set page(width: 8.5in, height: 11in, margin: 0.5in)
+#show par: set block(spacing: 0.75em)
 #set text(size: 11pt)
+#let align-date(date) = {
+  set align(right)
+  [#date]
+}
 #show heading.where(
   level: 1
 ): it => align(
@@ -61,27 +66,33 @@ to innovative engineering solutions in the field of control and robotics.
 
 == education
 
-California University, Long Beach
+#block(below: 0.65em,[*California State University, Long Beach*])
+#grid(columns: (1fr, .5fr),
+      align: (left, right),
+      rows: 2,
+      row-gutter: 0.65em,
+      [Bachelors of Science., Mechanical Engineering, Minor: Applied Mathematics],
+      [December 2019],
+      [Masters of Science., Mechanical Engineering, Control and Robotics],
+      [Expected Graduation: December 2025]
+)
 
-Bachelors of Sience., Mechanical Engineering, Minor: Applied Mathematics
-December 2019
+== projects
 
-Masters of Science., Mechanical Engineering, Control and Robotics
-Expected Graduation: December 2025
-
-== development
-
-Engineer - Control Of Robotic Arm - https://github.com/a-camarillo/HiWonder-Max-Arm
+Control Of Robotic Arm - https://github.com/a-camarillo/HiWonder-Max-Arm
 
 Technologies: ESP32, C++
-
-Leveraged the HiWonder Max Robotic Arm to study robotics applications of inverse
-kinematics and integration of various sensors such as ultrasonic and infrared.
-
-Developed algorithms in C++ allowing the ESP32 to control the robotic arm
-for object manipulation and object sorting tasks.
-
-Developer - Servo Motor Driver - 
+#block(above: 0.65em, [
+  #list(
+    marker: [•],
+    indent: 0.5em,
+    [Leveraged the HiWonder Max Robotic Arm to study robotics applications of inverse
+    kinematics and integration of various sensors such as ultrasonic and infrared.],
+    [Developed algorithms in C++ allowing the ESP32 to control the robotic arm
+    for object manipulation and object sorting tasks.]
+  )
+])
+Servo Motor Driver - 
 https://github.com.com/a-camarillo/embedded-rust/tree/main/esp32c6-test/servo-motor
 
 Technologies: ESP32C6, SG90 Servo Motor, Rust, esp-hal
@@ -95,9 +106,16 @@ pulse-width modulation signals to control motor position.
 
 == work experience
 
-emergency rental assistance case manager - Robert Half 
-September 2020 - December 2022
+#grid(
+  columns: (1fr, .5fr),
+  align: (left, right),
+  [*Emergency Rental Assistance Case Manager* - Robert Half],
+  [September 2020 - December 2022]
+)
 
-Communicated with applicants of an Emergency Rental Assistance Program to
-ensure they met the criteria outlined, providing over one million dollars
-of rent and utility assistance.
+#block(
+  above: 0.75em,
+  [Communicated with applicants of an Emergency Rental Assistance Program to
+  ensure they met the criteria outlined, providing over one million dollars
+  of rent and utility assistance.]
+)
