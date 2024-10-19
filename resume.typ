@@ -1,6 +1,7 @@
 #set page(width: 8.5in, height: 11in, margin: 0.5in)
 #show par: set block(spacing: 0.75em)
 #set text(size: 11pt)
+#show link: underline
 #let align-date(date) = {
   set align(right)
   [#date]
@@ -55,14 +56,11 @@ applied mathematics, and software development. Eager to learn and contribute
 to innovative engineering solutions in the field of control and robotics.
 
 == skills
-#let skills-list(..skills) = {
-    set text(weight: "bold")
-    for skill in skills.pos() [
-      #skill: \
-    ]
-}
 
-#skills-list("Software","Scientific Computing","Programming Language")
+*Programming Languages:* C++, MATLAB, Python, Rust, SQL\
+*Simulation:* CoppeliaSim, MuJoCo, Simulink\
+*Software:* ROS\
+*Developer Tools:* Docker, GDB, Git, Nix\
 
 == education
 
@@ -71,51 +69,88 @@ to innovative engineering solutions in the field of control and robotics.
       align: (left, right),
       rows: 2,
       row-gutter: 0.65em,
-      [Bachelors of Science., Mechanical Engineering, Minor: Applied Mathematics],
-      [December 2019],
       [Masters of Science., Mechanical Engineering, Control and Robotics],
-      [Expected Graduation: December 2025]
+      [Expected Graduation: December 2025],
+      [Bachelors of Science., Mechanical Engineering, Minor: Applied Mathematics],
+      [December 2019]
 )
 
 == projects
 
-Control Of Robotic Arm - https://github.com/a-camarillo/HiWonder-Max-Arm
+#grid(
+  columns: (1fr, .5fr),
+  align: (left, right),
+  [*Trajectory Planning of Robotic Manipulators* - _PACK Lab, CSULB_],
+  [September 2024 - Present]
+)
 
-Technologies: ESP32, C++
-#block(above: 0.65em, [
+#block(above: 0.75em,
+  [Technologies: MuJoCo, Python]
+)
+
+
+#grid(
+  columns: (1fr, .5fr),
+  align: (left, right),
+  [*Control Of Robotic Manipulator* - _Personal Project_],
+  [June 2024 - August 2024]
+)
+
+#block(above: 0.65em,
+  [https://github.com/a-camarillo/HiWonder-Max-Arm\
+  Technologies: ESP32, C++\
   #list(
     marker: [•],
     indent: 0.5em,
-    [Leveraged the HiWonder Max Robotic Arm to study robotics applications of inverse
-    kinematics and integration of various sensors such as ultrasonic and infrared.],
-    [Developed algorithms in C++ allowing the ESP32 to control the robotic arm
-    for object manipulation and object sorting tasks.]
-  )
-])
-Servo Motor Driver - 
-https://github.com.com/a-camarillo/embedded-rust/tree/main/esp32c6-test/servo-motor
+    [Leveraged a commercial 4-DOF robotic manipulator to study physical
+    applications of inverse kinematics, increasing knowledge in control
+    algorithms for robotics.],
+    [Developed algorithms in C++ to enable both manual and automonous control of 
+    the manipulator, integrating various sensors, allowing the manipulator
+    to perform pick and place tasks.],
+  )]
+)
 
-Technologies: ESP32C6, SG90 Servo Motor, Rust, esp-hal
+#grid(
+  columns: (1fr, .5fr),
+  align: (left, right),
+  [*Servo Motor Driver* - _Personal Project_],
+  [June 2024]
+)
 
-Utilized Rust to write a custom module for the ESP32C6 microcontroller,
-allowing the microcontroller to communicate with and operate and SG90
-servo motor.
-
-Leveraged existing ESP library for configuring onboard timers and generating
-pulse-width modulation signals to control motor position.
+#block(above: 0.65em,[
+  https://github.com.com/a-camarillo/embedded-rust/tree/main/esp32c6-test/servo-motor\
+  Technologies: ESP32C6, SG90 Servo Motor, Rust, esp-hal\
+  #list(
+    marker: [•],
+    indent: 0.5em,
+    [Programmed a custom module for the ESP32C6 microcontroller,
+    allowing the microcontroller to communicate with and operate an SG90
+    servo motor.],
+    [Integrated existing ESP library for configuring onboard timers and generating
+    pulse-width modulation signals to control motor position.]
+  )]
+)
 
 == work experience
 
 #grid(
   columns: (1fr, .5fr),
   align: (left, right),
-  [*Emergency Rental Assistance Case Manager* - Robert Half],
+  [*Emergency Rental Assistance Case Manager* - _Robert Half_],
   [September 2020 - December 2022]
 )
 
 #block(
   above: 0.75em,
+  [#list(
+    marker: [•],
+    indent: 0.5em,
   [Communicated with applicants of an Emergency Rental Assistance Program to
-  ensure they met the criteria outlined, providing over one million dollars
-  of rent and utility assistance.]
-)
+  ensure they met program requirements, providing over one million dollars
+  of rent and utility assistance.],
+  [Collected and organized sensitive documents from clients to simultaneously
+  process an average of 20 cases, guaranteeing a constant flow of applicants
+  receiving assistance.]
+  )
+])
