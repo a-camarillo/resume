@@ -57,10 +57,15 @@ to innovative engineering solutions in the field of control and robotics.
 
 == skills
 
-*Programming Languages:* C++, MATLAB, Python, Rust, SQL\
-*Simulation:* CoppeliaSim, MuJoCo, Simulink\
-*Software:* ROS\
-*Developer Tools:* Docker, GDB, Git, Nix\
+#grid(
+  columns:(1fr, .75fr),
+  align: (left, start),
+  [*Programming Languages:* C++, MATLAB, Python, Rust, SQL\
+  *Software:* AutoCAD, Fusion360, ROS, SolidWorks\
+  *Simulation:* CoppeliaSim, MuJoCo, Simulink],
+  [*Developer Tools:* Docker, GDB, Git, Nix\
+  *Hardware:* Arduino, ESP32]
+)
 
 == education
 
@@ -85,7 +90,17 @@ to innovative engineering solutions in the field of control and robotics.
 )
 
 #block(above: 0.75em,
-  [Technologies: MuJoCo, Python]
+  [Technologies: MuJoCo, Python\
+  #list(
+    marker: [•],
+    indent: 0.5em,
+    [Designing simulations of robotic manipulators to analyze different 
+    control algorithm effects on trajectory generartion.],
+    [Researching implementations of reinforcement learning for trajectory
+    planning to improve adaptability of manipulators in environments with
+    obstacles.]
+
+  )]
 )
 
 
@@ -132,7 +147,7 @@ to innovative engineering solutions in the field of control and robotics.
   )]
 )
 
-== work experience
+== additional experience
 
 #grid(
   columns: (1fr, .5fr),
@@ -150,7 +165,7 @@ to innovative engineering solutions in the field of control and robotics.
   ensure they met program requirements, providing over one million dollars
   of rent and utility assistance.],
   [Collected and organized sensitive documents from clients to simultaneously
-  process an average of 20 cases, guaranteeing a constant flow of applicants
+  process an average of 20 cases per week, guaranteeing a constant flow of applicants
   receiving assistance.]
   )
 ])
