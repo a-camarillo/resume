@@ -41,11 +41,11 @@
       #link("linkedin.com/in/a-camarillo") |
     ],
     align(center)[
-      #link("github.com/a-camarillo") |
+      #link("github.com/a-camarillo")
     ],
-    align(center)[
+    /* align(center)[
       #link("a-camarillo.dev")
-    ],
+    ], */
   )
 ])
 
@@ -62,7 +62,7 @@ to innovative engineering solutions in the field of control and robotics.
   align: (left, start),
   [*Programming Languages:* C++, MATLAB, Python, Rust, SQL\
   *Software:* AutoCAD, Fusion360, ROS, SolidWorks\
-  *Simulation:* CoppeliaSim, MuJoCo, Simulink],
+  *Simulation:* MuJoCo, Simulink],
   [*Developer Tools:* Docker, GDB, Git, Nix\
   *Hardware:* Arduino, ESP32]
 )
@@ -72,15 +72,19 @@ to innovative engineering solutions in the field of control and robotics.
 #block(below: 0.65em,[*California State University, Long Beach*])
 #grid(columns: (1fr, .5fr),
       align: (left, right),
-      rows: 2,
+      rows: 3,
       row-gutter: 0.65em,
       [Masters of Science., Mechanical Engineering, Control and Robotics],
       [Expected Graduation: December 2025],
       [Bachelors of Science., Mechanical Engineering, Minor: Applied Mathematics],
-      [December 2019]
+      [December 2019],
 )
+#block(above: 0.1em, 
+[_Relevant Coursework: Modeling and Analysis of Dynamic Systems, 
+  Modern Control of Dynamic Systems, 
+  Robot Modeling and Control_])
 
-== projects
+== research experience
 
 #grid(
   columns: (1fr, .5fr),
@@ -89,8 +93,9 @@ to innovative engineering solutions in the field of control and robotics.
   [September 2024 - Present]
 )
 
-#block(above: 0.75em,
-  [Technologies: MuJoCo, Python\
+#block(above: 0.75em, 
+  [https://github.com/a-camarillo/MuJoCo-UR5\
+  Technologies: MuJoCo, Python\
   #list(
     marker: [•],
     indent: 0.5em,
@@ -103,11 +108,32 @@ to innovative engineering solutions in the field of control and robotics.
   )]
 )
 
+== projects
+
+#grid(
+  columns: (1fr, .25fr),
+  align: (left, right),
+  [*Model Reference Adaptive Controller For Inverted Pendulum*],
+  [November 2024]
+)
+
+#block(above: 0.65em,
+  [
+  Technologies: MATLAB, Simulink\
+  #list(
+    marker: [•],
+    indent: 0.5em,
+    [Implented a modified Model Reference Adaptive Controller(MRAC) for control of an inverted
+    pendulum system, improving the system's response to input and disturbances.],
+    [Benchmarked implemented controller performance against traditional MRAC
+    and PID controllers through simulations in MATLAB/Simulink.]
+  )]
+)
 
 #grid(
   columns: (1fr, .5fr),
   align: (left, right),
-  [*Control Of Robotic Manipulator* - _Personal Project_],
+  [*Control Of Robotic Manipulator*],
   [June 2024 - August 2024]
 )
 
@@ -126,26 +152,6 @@ to innovative engineering solutions in the field of control and robotics.
   )]
 )
 
-#grid(
-  columns: (1fr, .5fr),
-  align: (left, right),
-  [*Servo Motor Driver* - _Personal Project_],
-  [June 2024]
-)
-
-#block(above: 0.65em,[
-  https://github.com.com/a-camarillo/embedded-rust/tree/main/esp32c6-test/servo-motor\
-  Technologies: ESP32C6, SG90 Servo Motor, Rust, esp-hal\
-  #list(
-    marker: [•],
-    indent: 0.5em,
-    [Programmed a custom module for the ESP32C6 microcontroller,
-    allowing the microcontroller to communicate with and operate an SG90
-    servo motor.],
-    [Integrated existing ESP library for configuring onboard timers and generating
-    pulse-width modulation signals to control motor position.]
-  )]
-)
 
 == additional experience
 
