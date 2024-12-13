@@ -147,7 +147,7 @@ to innovative engineering solutions in the field of control and robotics.
     angle of a 2 DOF half quadcopter to meet design criteria and stabilize the
     system.],
     [Developed the dynamic system model using MATLAB's System Identification Toolbox
-    and Simulink to measure designed controllers against the physical hardware output.],
+    and Simulink to validate designed controllers against the physical hardware output.],
   )]
 )
 
