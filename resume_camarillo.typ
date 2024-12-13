@@ -51,7 +51,7 @@
 
 == objective
 
-Graduate robotics student with a background in mechanical engineering,
+Graduate student with a background in mechanical engineering,
 applied mathematics, and software development. Eager to learn and contribute
 to innovative engineering solutions in the field of control and robotics.
 
@@ -94,7 +94,7 @@ to innovative engineering solutions in the field of control and robotics.
 )
 
 #block(above: 0.75em, 
-  [https://github.com/a-camarillo/MuJoCo-UR5\
+  [
   Technologies: MuJoCo, Python\
   #list(
     marker: [•],
@@ -123,7 +123,7 @@ to innovative engineering solutions in the field of control and robotics.
   #list(
     marker: [•],
     indent: 0.5em,
-    [Implented a modified Model Reference Adaptive Controller(MRAC) for control of an inverted
+    [Implemented a modified Model Reference Adaptive Controller(MRAC) for control of an inverted
     pendulum system, improving the system's response to input and disturbances.],
     [Benchmarked implemented controller performance against traditional MRAC
     and PID controllers through simulations in MATLAB/Simulink.]
@@ -133,22 +133,21 @@ to innovative engineering solutions in the field of control and robotics.
 #grid(
   columns: (1fr, .5fr),
   align: (left, right),
-  [*Control Of Robotic Manipulator*],
-  [June 2024 - August 2024]
+  [*Controller Design for Half Quadcopter System*],
+  [November 2024]
 )
 
 #block(above: 0.65em,
-  [https://github.com/a-camarillo/HiWonder-Max-Arm\
-  Technologies: ESP32, C++\
+  [
+  Technologies: MATLAB, Simulink\
   #list(
     marker: [•],
     indent: 0.5em,
-    [Leveraged a commercial 4-DOF robotic manipulator to study physical
-    applications of inverse kinematics, increasing knowledge in control
-    algorithms for robotics.],
-    [Developed algorithms in C++ to enable both manual and automonous control of 
-    the manipulator, integrating various sensors, allowing the manipulator
-    to perform pick and place tasks.],
+    [Designed PID, pole placement, and LQR controllers for controlling the pitch
+    angle of a 2 DOF half quadcopter to meet design criteria and stabilize the
+    system.],
+    [Developed the dynamic system model using MATLAB's System Identification Toolbox
+    and Simulink to measure designed controllers against the physical hardware output.],
   )]
 )
 
