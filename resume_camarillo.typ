@@ -1,6 +1,5 @@
 #set page(width: 8.5in, height: 11in, margin: 0.5in)
-#show par: set block(spacing: 0.75em)
-#set text(size: 11pt)
+#set text(size: 11pt, font:"Times New Roman")
 #show link: underline
 #let align-date(date) = {
   set align(right)
@@ -18,10 +17,12 @@
   
 #show heading.where(
   level: 2
-): it => text(
+): it =>[
+#text(
   weight: "bold",
   upper(it.body + [:])
 )
+]
 #show heading.where(
   level: 3
 ): it => text(
@@ -51,25 +52,36 @@
 
 == objective
 
-Graduate student with a background in mechanical engineering,
+#block(
+  above: 0.65em,
+[Graduate student with a background in mechanical engineering,
 applied mathematics, and software development. Eager to learn and contribute
 to innovative engineering solutions in the field of control and robotics.
+])
 
 == skills
-
-#grid(
-  columns:(1fr, .75fr),
-  align: (left, start),
-  [*Programming Languages:* C++, MATLAB, Python, Rust, SQL\
-  *Software:* AutoCAD, Fusion360, ROS, SolidWorks\
-  *Simulation:* MuJoCo, Simulink],
-  [*Developer Tools:* Docker, GDB, Git, Nix\
-  *Hardware:* Arduino, ESP32]
+#block(
+  above: 0.65em,
+  [#grid(
+    columns:(1fr, .75fr),
+    align: (left, start),
+    [*Programming Languages:* C++, MATLAB, Python, Rust, SQL\
+    *Software:* AutoCAD, Fusion360, ROS, SolidWorks\
+    *Simulation:* MuJoCo, Simulink],
+    [*Developer Tools:* Docker, GDB, Git, Nix\
+    *Hardware:* Arduino, ESP32]
+  )]
 )
 
 == education
 
-#block(below: 0.65em,[*California State University, Long Beach*])
+#block(
+  above: 0.65em,
+  below: 0.65em,
+  grid(columns: (1fr, .5fr),
+       align: (left, right),
+      [*California State University, Long Beach*],
+      [GPA: 3.5]))
 #grid(columns: (1fr, .5fr),
       align: (left, right),
       rows: 3,
@@ -86,11 +98,14 @@ to innovative engineering solutions in the field of control and robotics.
 
 == research experience
 
-#grid(
-  columns: (1fr, .5fr),
-  align: (left, right),
-  [*Trajectory Planning of Robotic Manipulators* - _PACK Lab, CSULB_],
-  [September 2024 - Present]
+#block(
+  above: 0.65em,
+  grid(
+    columns: (1fr, .5fr),
+    align: (left, right),
+    [*Trajectory Planning of Robotic Manipulators* - _PACK Lab, CSULB_],
+    [September 2024 - Present]
+    )
 )
 
 #block(above: 0.75em, 
@@ -110,11 +125,14 @@ to innovative engineering solutions in the field of control and robotics.
 
 == projects
 
-#grid(
-  columns: (1fr, .25fr),
-  align: (left, right),
-  [*Model Reference Adaptive Controller For Inverted Pendulum*],
-  [November 2024]
+#block(
+  above: 0.65em,
+  grid(
+    columns: (1fr, .25fr),
+    align: (left, right),
+    [*Model Reference Adaptive Controller For Inverted Pendulum*],
+    [November 2024]
+  )
 )
 
 #block(above: 0.65em,
@@ -154,11 +172,14 @@ to innovative engineering solutions in the field of control and robotics.
 
 == additional experience
 
-#grid(
-  columns: (1fr, .5fr),
-  align: (left, right),
-  [*Emergency Rental Assistance Case Manager* - _Robert Half_],
-  [September 2020 - December 2022]
+#block(
+  above: 0.65em,
+  grid(
+    columns: (1fr, .5fr),
+    align: (left, right),
+    [*Emergency Rental Assistance Case Manager* - _Robert Half_],
+    [September 2020 - December 2022]
+  )
 )
 
 #block(
