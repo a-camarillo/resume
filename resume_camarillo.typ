@@ -66,7 +66,7 @@ to innovative engineering solutions in the field of control and robotics.
     columns:(1fr, .75fr),
     align: (left, start),
     [*Programming Languages:* C++, MATLAB, Python, Rust, SQL\
-    *Software:* AutoCAD, Fusion360, ROS, SolidWorks\
+    *Software:* AutoCAD, Fusion360, ROS, SolidWorks, MS Excel\
     *Simulation:* MuJoCo, Simulink],
     [*Developer Tools:* Docker, GDB, Git, Nix\
     *Hardware:* Arduino, ESP32]
@@ -103,7 +103,7 @@ to innovative engineering solutions in the field of control and robotics.
   grid(
     columns: (1fr, .5fr),
     align: (left, right),
-    [*Trajectory Planning of Robotic Manipulators* - _PACK Lab, CSULB_],
+    [*Path Planning of Robotic Manipulators* - _PACK Lab, CSULB_],
     [September 2024 - Present]
     )
 )
@@ -114,12 +114,10 @@ to innovative engineering solutions in the field of control and robotics.
   #list(
     marker: [•],
     indent: 0.5em,
-    [Designing simulations of robotic manipulators to analyze different 
-    control algorithm effects on trajectory generartion.],
-    [Researching implementations of reinforcement learning for trajectory
-    planning to improve adaptability of manipulators in environments with
-    obstacles.]
-
+    [Researching implementations of reinforcement learning to find the 
+    optimal path for multiple manipulators in environments with obstacles.],
+    [Developing environments with PettingZoo to test reinforcement learning
+    algorithms and simulating training in MuJoCo.],
   )]
 )
 
@@ -144,7 +142,7 @@ to innovative engineering solutions in the field of control and robotics.
     [Implemented a modified Model Reference Adaptive Controller(MRAC) for control of an inverted
     pendulum system, improving the system's response to input and disturbances.],
     [Benchmarked implemented controller performance against traditional MRAC
-    and PID controllers through simulations in MATLAB/Simulink.]
+    and PID controllers through simulations in MATLAB/Simulink and presented results.]
   )]
 )
 
