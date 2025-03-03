@@ -8,7 +8,7 @@
 
 #let headerline = [
   #block(
-    spacing: 0.05em,
+    spacing: 0.25em,
     [
       #line(length: 100%, stroke: 0.25pt)
     ]
@@ -145,12 +145,14 @@
   #list(
     marker: [•],
     indent: 0.5em,
-    [Designed PID, pole placement, and LQR controllers for controlling the pitch
-    angle of a 2 DOF half quadcopter to meet design criteria and stabilize the
+    [Developed a model for a half quadcopter with MATLAB's System
+    Identification Toolbox based on measurements of the real-world
     system.],
-    [Developed a dynamic system model using MATLAB's System Identification Toolbox
-    and Simulink to validate designed controllers against measurements 
-    taken from the physical hardware.],
+    [Designed PID, pole placement, and LQR controllers for controlling the voltage,
+    pitch, and yaw angle of the half quadcopter to stabilize the system output
+    according to design criteria.],
+    [Visualized and reported the performance of the half quadcopter for each controller 
+    assessing the system's response to various reference inputs.],
   )]
 )
 
