@@ -1,16 +1,26 @@
-#set page(width: 8.5in, height: 11in, margin: 0.5in)
+#set page(width: 8.5in, height: 11in, margin: 0.25in)
 #set text(size: 11pt, font:"Times New Roman")
 #show link: underline
 #let align-date(date) = {
   set align(right)
   [#date]
 }
+
+#let headerline = [
+  #block(
+    spacing: 0.05em,
+    [
+      #line(length: 100%, stroke: 0.25pt)
+    ]
+  )
+]
+
 #show heading.where(
   level: 1
 ): it => align(
   center,
   text(
-    size: 14pt,
+    size: 18pt,
     it.body
   ),
 )
@@ -31,56 +41,35 @@
 )
 
 = Anthony Camarillo
-#align(center, [  
-  #grid(
-    columns: (auto, auto, auto, auto),
-    gutter: 5pt,
-    align(center)[
-      #link("mailto:anthony.camarillo.96@gmail.com") |
-    ],
-    align(center)[
-      #link("linkedin.com/in/a-camarillo") |
-    ],
-    align(center)[
-      #link("github.com/a-camarillo")
-    ],
-    /* align(center)[
-      #link("a-camarillo.dev")
-    ], */
-  )
-])
-
-== objective
-
-#block(
-  above: 0.65em,
-[Graduate student with a background in mechanical engineering,
-applied mathematics, and software development. Eager to learn and contribute
-to innovative engineering solutions in the field of control and robotics.
-])
-
-== skills
-#block(
-  above: 0.65em,
-  [#grid(
-    columns:(1fr, .75fr),
-    align: (left, start),
-    [*Programming Languages:* C++, MATLAB, Python, Rust, SQL\
-    *Software:* AutoCAD, Fusion360, ROS, SolidWorks, MS Excel\
-    *Simulation:* MuJoCo, Simulink],
-    [*Developer Tools:* Docker, GDB, Git, Nix\
-    *Hardware:* Arduino, ESP32]
-  )]
-)
+#align(center, [
+  #block(
+    above: 0.65em,
+    [#grid(
+      columns: (auto, auto, auto, auto),
+      gutter: 5pt,
+      align(center)[
+        #link("mailto:anthony.camarillo.96@gmail.com") |
+      ],
+      align(center)[
+        #link("linkedin.com/in/a-camarillo") |
+      ],
+      align(center)[
+        #link("github.com/a-camarillo")
+      ],
+      /* align(center)[
+        #link("a-camarillo.dev")
+      ], */
+    )]
+)])
 
 == education
-
+#headerline
 #block(
   above: 0.65em,
   below: 0.65em,
   grid(columns: (1fr, .5fr),
        align: (left, right),
-      [*California State University, Long Beach*],
+      [*California State University, Long Beach(CSULB)*],
       [GPA: 3.5]))
 #grid(columns: (1fr, .5fr),
       align: (left, right),
@@ -97,20 +86,19 @@ to innovative engineering solutions in the field of control and robotics.
   Robot Modeling and Control_])
 
 == research experience
-
+#headerline
 #block(
   above: 0.65em,
   grid(
     columns: (1fr, .5fr),
     align: (left, right),
-    [*Path Planning of Robotic Manipulators* - _PACK Lab, CSULB_],
+    [*PACK Lab, CSULB* - _Student Research Member_],
     [September 2024 - Present]
     )
 )
 
 #block(above: 0.75em, 
   [
-  Technologies: MuJoCo, Python\
   #list(
     marker: [•],
     indent: 0.5em,
@@ -122,20 +110,19 @@ to innovative engineering solutions in the field of control and robotics.
 )
 
 == projects
-
+#headerline
 #block(
   above: 0.65em,
   grid(
     columns: (1fr, .25fr),
     align: (left, right),
-    [*Model Reference Adaptive Controller For Inverted Pendulum*],
+    [_Model Reference Adaptive Controller For Inverted Pendulum_],
     [November 2024]
   )
 )
 
 #block(above: 0.65em,
   [
-  Technologies: MATLAB, Simulink\
   #list(
     marker: [•],
     indent: 0.5em,
@@ -149,33 +136,33 @@ to innovative engineering solutions in the field of control and robotics.
 #grid(
   columns: (1fr, .5fr),
   align: (left, right),
-  [*Controller Design for Half Quadcopter System*],
+  [_Controller Design for Half Quadcopter System_],
   [November 2024]
 )
 
 #block(above: 0.65em,
   [
-  Technologies: MATLAB, Simulink\
   #list(
     marker: [•],
     indent: 0.5em,
     [Designed PID, pole placement, and LQR controllers for controlling the pitch
     angle of a 2 DOF half quadcopter to meet design criteria and stabilize the
     system.],
-    [Developed the dynamic system model using MATLAB's System Identification Toolbox
-    and Simulink to validate designed controllers against the physical hardware output.],
+    [Developed a dynamic system model using MATLAB's System Identification Toolbox
+    and Simulink to validate designed controllers against measurements 
+    taken from the physical hardware.],
   )]
 )
 
 
 == additional experience
-
+#headerline
 #block(
   above: 0.65em,
   grid(
     columns: (1fr, .5fr),
     align: (left, right),
-    [*Emergency Rental Assistance Case Manager* - _Robert Half_],
+    [*Robert Half* - _Emergency Rental Assistance Case Manager_],
     [September 2020 - December 2022]
   )
 )
@@ -186,10 +173,26 @@ to innovative engineering solutions in the field of control and robotics.
     marker: [•],
     indent: 0.5em,
   [Communicated with applicants of an Emergency Rental Assistance Program to
-  ensure they met program requirements, providing over one million dollars
+  collect necessary documents for processing their application, providing over one million dollars
   of rent and utility assistance.],
-  [Collected and organized sensitive documents from clients to simultaneously
-  process an average of 20 cases per week, guaranteeing a constant flow of applicants
-  receiving assistance.]
+  [Collaborated with team members to review and verify each application was processed
+  correctly, ensuring quality checks before submission for approval.],
+  [Trained both new and current peers on the application process workflow while
+  staying updated on procedural changes.]
   )
 ])
+
+== skills
+#headerline
+#block(
+  above: 0.65em,
+  [
+  #grid(
+    columns:(1fr, .75fr),
+    align: (left, start),
+    [*Programming:* C++, MATLAB, Python, SQL, Git \
+    *Software:* AutoCAD, Fusion360, ROS, SolidWorks, MS Excel],
+    [*Simulation:* MuJoCo, Simulink \
+    *Hardware:* Arduino, ESP32]
+  )]
+)
