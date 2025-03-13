@@ -75,13 +75,13 @@
       align: (left, right),
       rows: 3,
       row-gutter: 0.65em,
-      [Masters of Science., Mechanical Engineering, Control and Robotics],
+      [Masters of Science., Mechanical Engineering, Dynamics and Control/*Dynamics, Vibrations, Control, Robotics*/],
       [Expected Graduation: December 2025],
       [Bachelors of Science., Mechanical Engineering, Minor: Applied Mathematics],
       [December 2019],
 )
 #block(above: 0.1em, 
-[_Relevant Coursework: Modeling and Analysis of Dynamic Systems, 
+[_Relevant Coursework: /*Advanced Mechanics of Materials, */Modeling and Analysis of Dynamic Systems, 
   Modern Control of Dynamic Systems, 
   Robot Modeling and Control_])
 
@@ -92,7 +92,7 @@
   grid(
     columns: (1fr, .5fr),
     align: (left, right),
-    [*PACK Lab, CSULB* - _Student Research Member_],
+    [*P.A.C.K. Lab, CSULB* - _Student Research Member_],
     [September 2024 - Present]
     )
 )
@@ -102,6 +102,10 @@
   #list(
     marker: [•],
     indent: 0.5em,
+    [Developed Python scripts to train reinforcement learning agents,
+    process data, and evaluate results.],
+    [Composed training documentation on simulation software with detailed
+     explanations and examples for replicability.],
     [Researching implementations of reinforcement learning to find the 
     optimal path for multiple manipulators in environments with obstacles.],
     [Developing environments with PettingZoo to test reinforcement learning
