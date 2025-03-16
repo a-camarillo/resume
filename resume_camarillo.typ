@@ -1,5 +1,5 @@
 #set page(width: 8.5in, height: 11in, margin: 0.25in)
-#set text(size: 11pt, font:"Times New Roman")
+#set text(size: 12pt, font:"Times New Roman")
 #show link: underline
 #let align-date(date) = {
   set align(right)
@@ -102,19 +102,36 @@
   #list(
     marker: [•],
     indent: 0.5em,
-    [Developed Python scripts to train reinforcement learning agents,
-    process data, and evaluate results.],
-    [Composed training documentation on simulation software with detailed
+    [Investigating applications of reinforcement learning for control of
+    robotic manipulators and traffic signal control.],
+    [Developing Python scripts to train reinforcement learning agents,
+    process data, and analyze results.],
+    [Composing training documentation on simulation software with detailed
      explanations and examples for replicability.],
-    [Researching implementations of reinforcement learning to find the 
-    optimal path for multiple manipulators in environments with obstacles.],
-    [Developing environments with PettingZoo to test reinforcement learning
-    algorithms and simulating training in MuJoCo.],
   )]
 )
 
 == projects
 #headerline
+/* #block(
+  above: 0.65em,
+  grid(
+    columns: (1fr, .25fr),
+    align: (left, right),
+    [*SharkSat* - _Attitude Determination and Control System Team Member_],
+    [January 2025 - Present]
+  )
+)
+
+#block(above: 0.65em,
+  [
+  #list(
+    marker: [•],
+    indent: 0.5em,
+    [],
+  )]
+) */
+
 #block(
   above: 0.65em,
   grid(
@@ -130,10 +147,12 @@
   #list(
     marker: [•],
     indent: 0.5em,
-    [Implemented a modified Model Reference Adaptive Controller(MRAC) for control of an inverted
-    pendulum system, improving the system's response to input and disturbances.],
-    [Benchmarked implemented controller performance against traditional MRAC
-    and PID controllers through simulations in MATLAB/Simulink and presented results.]
+    [Reviewed academic literature on modern control methods to explore
+    methodologies and identify a study to replicate.],
+    [Reproduced the implementation of a modified Model Reference Adaptive Controller(MRAC) for an inverted
+    pendulum system.],
+    [Benchmarked controller performance against traditional MRAC and PID 
+    controllers through simulations in MATLAB/Simulink and presented results.]
   )]
 )
 
