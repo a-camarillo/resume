@@ -216,7 +216,7 @@
     columns:(1fr, .75fr),
     align: (left, start),
     [*Programming:* C++, MATLAB, Python, SQL, Git \
-    *Software:* AutoCAD, Fusion360, ROS, SolidWorks, MS Excel],
+    *Software:* AutoCAD, Fusion360, SolidWorks, MS Excel],
     [*Simulation:* MuJoCo, Simulink \
     *Hardware:* Arduino, ESP32]
   )]
