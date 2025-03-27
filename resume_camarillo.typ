@@ -1,5 +1,5 @@
 #set page(width: 8.5in, height: 11in, margin: 0.25in)
-#set text(size: 12pt, font:"Times New Roman")
+#set text(size: 11pt, font:"Times New Roman")
 #show link: underline
 #let align-date(date) = {
   set align(right)
@@ -85,6 +85,33 @@
   Modern Control of Dynamic Systems, 
   Robot Modeling and Control_])
 
+/* This part can be moved around as it applies to the job */
+== experience
+#headerline
+#block(
+  above: 0.65em,
+  grid(
+    columns: (1fr, .25fr),
+    align: (left, right),
+    [*SharkSat, CSULB* - _Attitude Determination and Control System(ADCS) Team Member_],
+    [January 2025 - Present]
+  )
+)
+
+#block(above: 0.65em,
+  [
+  #list(
+    marker: [•],
+    indent: 0.5em,
+    [Creating linear models from system dynamics to perform analysis and design 
+    controllers for a CubeSat attitude control system.
+    ],
+    [Programming MATLAB scripts to conduct stability analysis and simulate
+    system response for varying reaction wheel inputs.],
+    /*[],*/
+  )]
+)
+
 == research experience
 #headerline
 #block(
@@ -92,7 +119,7 @@
   grid(
     columns: (1fr, .5fr),
     align: (left, right),
-    [*P.A.C.K. Lab, CSULB* - _Student Research Member_],
+    [*P.A.C.K. Lab, CSULB* - _Research Assistant_],
     [September 2024 - Present]
     )
 )
@@ -113,25 +140,6 @@
 
 == projects
 #headerline
-/* #block(
-  above: 0.65em,
-  grid(
-    columns: (1fr, .25fr),
-    align: (left, right),
-    [*SharkSat* - _Attitude Determination and Control System Team Member_],
-    [January 2025 - Present]
-  )
-)
-
-#block(above: 0.65em,
-  [
-  #list(
-    marker: [•],
-    indent: 0.5em,
-    [],
-  )]
-) */
-
 #block(
   above: 0.65em,
   grid(
@@ -178,7 +186,6 @@
     assessing the system's response to various reference inputs.],
   )]
 )
-
 
 == additional experience
 #headerline
