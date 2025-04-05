@@ -51,7 +51,7 @@
         #link("mailto:anthony.camarillo.96@gmail.com") |
       ],
       align(center)[
-        #link("linkedin.com/in/a-camarillo") |
+        #link("linkedin.com/in/anthony-camarillo") |
       ],
       align(center)[
         #link("github.com/a-camarillo")
