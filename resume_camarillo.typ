@@ -145,6 +145,30 @@
   grid(
     columns: (1fr, .25fr),
     align: (left, right),
+    [_State Estimation for Vertical Rocket Launch_],
+    [April 2025]
+  )
+)
+
+#block(above: 0.65em,
+  [
+  #list(
+    marker: [•],
+    indent: 0.5em,
+    [Simulated vertical rocket launch trajectories using real-world dynamics
+    to account for time-varying states.],
+    [Applied kalman filter and extended kalman filter techniques to estimate
+    rocket position and velocity.],
+    [Programmed Python to conduct simulation calculations, visualize the system's
+    change over time, and compare estimated values to true values.],
+  )]
+)
+
+#block(
+  above: 0.65em,
+  grid(
+    columns: (1fr, .25fr),
+    align: (left, right),
     [_Model Reference Adaptive Controller For Inverted Pendulum_],
     [November 2024]
   )
