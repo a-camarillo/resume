@@ -145,7 +145,7 @@
   grid(
     columns: (1fr, .25fr),
     align: (left, right),
-    [_State Estimation for Vertical Rocket Launch_],
+    [*State Estimation for Vertical Rocket Launch*],
     [April 2025]
   )
 )
@@ -169,7 +169,7 @@
   grid(
     columns: (1fr, .25fr),
     align: (left, right),
-    [_Model Reference Adaptive Controller For Inverted Pendulum_],
+    [*Model Reference Adaptive Controller For Inverted Pendulum*],
     [November 2024]
   )
 )
@@ -182,7 +182,7 @@
     [Reviewed academic literature on modern control methods to explore
     methodologies and identify a study to replicate.],
     [Reproduced the implementation of a modified Model Reference Adaptive Controller(MRAC) for an inverted
-    pendulum system.],
+    pendulum.],
     [Benchmarked controller performance against traditional MRAC and PID 
     controllers through simulations in MATLAB/Simulink and presented results.]
   )]
@@ -191,7 +191,7 @@
 #grid(
   columns: (1fr, .5fr),
   align: (left, right),
-  [_Controller Design for Half Quadcopter System_],
+  [*Controller Design for Half Quadcopter System*],
   [November 2024]
 )
 
