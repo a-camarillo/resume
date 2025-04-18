@@ -44,9 +44,18 @@
 #align(center, [
   #block(
     above: 0.65em,
+    [Long Beach, CA]
+  )
+]) 
+#align(center, [
+  #block(
+    above: 0.65em,
     [#grid(
-      columns: (auto, auto, auto, auto),
+      columns: (auto, auto, auto, auto, auto),
       gutter: 5pt,
+      align(center)[
+        (310)738-8005 |
+      ],
       align(center)[
         #link("mailto:anthony.camarillo.96@gmail.com") |
       ],
@@ -54,11 +63,14 @@
         #link("linkedin.com/in/anthony-camarillo") |
       ],
       align(center)[
-        #link("github.com/a-camarillo")
+        #link("github.com/a-camarillo") |
       ],
       /* align(center)[
         #link("a-camarillo.dev")
       ], */
+      align(center)[
+        U.S. Citizen
+      ],
     )]
 )])
 
@@ -83,7 +95,7 @@
 #block(above: 0.1em, 
 [_Relevant Coursework: /*Advanced Mechanics of Materials, */Modeling and Analysis of Dynamic Systems, 
   Modern Control of Dynamic Systems, 
-  Robot Modeling and Control_])
+  Robot Modeling/Control_])
 
 /* This part can be moved around as it applies to the job */
 == experience
@@ -131,8 +143,8 @@
     indent: 0.5em,
     [Investigating applications of reinforcement learning for control of
     robotic manipulators and traffic signal control.],
-    [Developing Python scripts to train reinforcement learning agents,
-    process data, and analyze results.],
+    [Developing Python scripts in a Linux environment to train reinforcement
+    learning agents, process data, and analyze results.],
     [Composing training documentation on simulation software with detailed
      explanations and examples for replicability.],
   )]
@@ -233,8 +245,9 @@
   of rent and utility assistance.],
   [Collaborated with team members to review and verify each application was processed
   correctly, ensuring quality checks before submission for approval.],
-  [Trained peers on the application process workflow while
-  staying updated on procedural changes.]
+  [Trained peers on the application process workflow while staying updated
+  on procedural changes, guaranteeing correct work practices amidst constant
+  process revisions.]
   )
 ])
 
